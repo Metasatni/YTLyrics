@@ -1,0 +1,16 @@
+{
+    "manifest_version":3,
+    "version":"1.0",
+    "name":"YTLyrics",
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png"
+    },
+    "description":"Adds a button that, when clicked, will start looking for the lyrics of the song you're listening to",
+    "content_scripts":[
+      {
+       "matches":["*://*.youtube.com/*"],
+       "js":["main.js"]
+      }
+    ]
+  }
